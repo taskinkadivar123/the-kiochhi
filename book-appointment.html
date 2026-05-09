@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment | THE KIOCHHI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="images/kiochi-removebg-preview.png" alt="Logo" style="height: 40px; border-radius: 50%;">
+                <h2>THE KIOCHHI</h2>
+            </a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn btn-primary active" style="padding: 0.6rem 1.5rem;">Book
+                        Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="padding-top: 120px;"></div>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 4rem;">
+                <p class="subtitle"
+                    style="color: var(--color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">
+                    Reservation</p>
+                <h1 style="font-size: 3.5rem;">Book an Appointment</h1>
+                <p style="max-width: 600px; margin: 1rem auto 0; color: var(--color-text);">Fill out the form below to
+                    secure your private session at our luxury salon.</p>
+            </div>
+
+            <div class="card" style="max-width: 800px; margin: 0 auto;">
+                <form action="#" method="POST">
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" class="form-control" placeholder="your@email.com" required>
+                        </div>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div>
+                            <label>Phone Number</label>
+                            <input type="tel" class="form-control" placeholder="Mobile Number" required>
+                        </div>
+                        <div>
+                            <label>Gender</label>
+                            <select class="form-control" required style="appearance: none;">
+                                <option value="" disabled selected>Select Gender</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Select Service</label>
+                        <select class="form-control" required style="appearance: none;">
+                            <option value="" disabled selected>Choose a Service</option>
+                            <optgroup label="Hair Services">
+                                <option value="haircut">Signature Cut</option>
+                                <option value="hairspa">Luxury Hair Spa</option>
+                                <option value="color">Balayage / Ombre</option>
+                                <option value="keratin">Keratin Smoothing</option>
+                            </optgroup>
+                            <optgroup label="Skin Rituals">
+                                <option value="goldfacial">24K Gold Facial</option>
+                                <option value="hydrafacial">HydraFacial MD</option>
+                                <option value="acne">Acne Control Therapy</option>
+                                <option value="peeling">Glow Peeling</option>
+                            </optgroup>
+                            <optgroup label="Nail Artistry">
+                                <option value="gelpolish">Gel Polish</option>
+                                <option value="acrylic">Acrylic Extensions</option>
+                                <option value="spamanicure">Luxury Spa Manicure</option>
+                                <option value="spapedicure">Luxury Spa Pedicure</option>
+                            </optgroup>
+                            <optgroup label="Bridal & Makeup">
+                                <option value="hdmakeup">HD Bridal Makeup</option>
+                                <option value="airbrush">Airbrush Makeup</option>
+                                <option value="bridalpreglow">Bridal Pre-Glow</option>
+                                <option value="partymakeup">Party Makeup</option>
+                            </optgroup>
+                        </select>
+                    </div>
+
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;">
+                        <div>
+                            <label>Preferred Date</label>
+                            <input type="date" class="form-control" required>
+                        </div>
+                        <div>
+                            <label>Preferred Time</label>
+                            <input type="time" class="form-control" min="10:00" max="21:00" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label>Your Address</label>
+                        <textarea class="form-control" placeholder="Enter your full address"
+                            style="min-height: 100px; resize: vertical;" required></textarea>
+                    </div>
+
+                    <div class="text-center" style="margin-top: 2rem;">
+                        <button type="submit" class="btn btn-primary"
+                            style="padding: 1.2rem 4rem; font-size: 1.1rem; width: 100%;">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Quote Section -->
+    <div class="quote-section">
+        <p>"True beauty is the harmony of elegance and confidence. Let THE KIOCHHI be the canvas for your masterpiece."
+        </p>
+    </div>
+
+    <!-- New Perfect Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem; text-transform: uppercase;">THE KIOCHHI</h2>
+                    <p style="color: var(--color-text);">Rajkot's premier luxury beauty destination.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i> 1104, Aqua Coral,
+                        Katariya Maruti Showroom, 150 Feet Ring Road, Rajkot-360005</p>
+                    <p><i class="fas fa-phone-alt" style="color: var(--color-primary);"></i> 08050070850</p>
+                    <p><i class="fas fa-envelope" style="color: var(--color-primary);"></i> thekiochhi@gmail.com</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/9108050070850" target="_blank" title="WhatsApp Chat"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" title="JustDial"><i class="fas fa-star"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center"
+                style="border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 2rem; font-size: 0.9rem;">
+                <p>&copy; 2026 THE KIOCHHI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

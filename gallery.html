@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | THE KIOCHHI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .gallery-grid-full {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .gallery-grid-full img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 16px;
+            box-shadow: var(--shadow-soft);
+            transition: var(--transition);
+        }
+
+        .gallery-grid-full img:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-hover);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar scrolled">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 10px;">
+                <img src="images/kiochi-removebg-preview.png" alt="Logo" style="height: 40px; border-radius: 50%;">
+                <h2>THE KIOCHHI</h2>
+            </a>
+            <button class="hamburger"><i class="fas fa-bars"></i></button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="book-appointment.html" class="btn btn-primary" style="padding: 0.6rem 1.5rem;">Book
+                        Appointment</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div style="padding-top: 120px;"></div>
+
+    <section class="section">
+        <div class="container">
+            <div class="text-center" style="margin-bottom: 5rem;">
+                <p class="subtitle"
+                    style="color: var(--color-primary); font-weight: 600; text-transform: uppercase; letter-spacing: 2px;">
+                    Portfolio</p>
+                <h1 style="font-size: 3.5rem;">Our Masterpieces</h1>
+                <p style="max-width: 600px; margin: 1rem auto 0; color: var(--color-text);">A glimpse into the beautiful
+                    transformations and the luxurious atmosphere at THE KIOCHHI.</p>
+            </div>
+
+            <div class="text-center" style="margin-bottom: 3rem;">
+                <div class="gallery-filters"
+                    style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <button class="btn btn-outline filter-btn active" data-filter="all"
+                        style="padding: 0.5rem 1.5rem; border-radius: 30px;">All Work</button>
+                    <button class="btn btn-outline filter-btn" data-filter="hair"
+                        style="padding: 0.5rem 1.5rem; border-radius: 30px;">Hair Styles</button>
+                    <button class="btn btn-outline filter-btn" data-filter="skin"
+                        style="padding: 0.5rem 1.5rem; border-radius: 30px;">Skin & Makeup</button>
+                    <button class="btn btn-outline filter-btn" data-filter="nail"
+                        style="padding: 0.5rem 1.5rem; border-radius: 30px;">Nails</button>
+                    <button class="btn btn-outline filter-btn" data-filter="salon"
+                        style="padding: 0.5rem 1.5rem; border-radius: 30px;">Salon Interior</button>
+                </div>
+            </div>
+
+            <div class="gallery-grid-full">
+                <!-- Hair -->
+                <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Style 1" class="gallery-img hair">
+                <img src="images/gallery/kiochhi7.PNG" alt="Style 2" class="gallery-img hair">
+
+                <!-- Salon -->
+                <img src="images/gallery/kiochhi3.PNG" alt="Interior" class="gallery-img salon">
+                <img src="images/gallery/kiochhi4.PNG" alt="Interior" class="gallery-img salon">
+                <img src="https://images.unsplash.com/photo-1527799820374-dcf8d9d4a388?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Salon Tools" class="gallery-img salon">
+
+                <!-- Skin/Makeup -->
+                <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Makeup" class="gallery-img skin">
+                <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Bridal" class="gallery-img skin">
+                <img src="images/gallery/kiochhi9.jfif" alt="Model" class="gallery-img skin">
+
+                <!-- Nail -->
+                <img src="https://images.unsplash.com/photo-1522337660859-02fbefca4702?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                    alt="Nail Art" class="gallery-img nail">
+            </div>
+        </div>
+    </section>
+
+    <!-- Small Quote Section -->
+    <div class="quote-section">
+        <p>"True beauty is the harmony of elegance and confidence. Let THE KIOCHHI be the canvas for your masterpiece."
+        </p>
+    </div>
+
+    <!-- New Perfect Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem; text-transform: uppercase;">THE KIOCHHI</h2>
+                    <p style="color: var(--color-text);">Rajkot's premier luxury beauty destination.</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <p><i class="fas fa-map-marker-alt" style="color: var(--color-primary);"></i> 1104, Aqua Coral,
+                        Katariya Maruti Showroom, 150 Feet Ring Road, Rajkot-360005</p>
+                    <p><i class="fas fa-phone-alt" style="color: var(--color-primary);"></i> 08050070850</p>
+                    <p><i class="fas fa-envelope" style="color: var(--color-primary);"></i> thekiochhi@gmail.com</p>
+                </div>
+
+                <div class="footer-col">
+                    <h3>Connect With Us</h3>
+                    <div class="footer-socials">
+                        <a href="https://wa.me/9108050070850" target="_blank" title="WhatsApp Chat"><i
+                                class="fab fa-whatsapp"></i></a>
+                        <a href="#" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" target="_blank" title="JustDial"><i class="fas fa-star"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center"
+                style="border-top: 1px solid var(--color-border); padding-top: 2rem; margin-top: 2rem; font-size: 0.9rem;">
+                <p>&copy; 2026 THE KIOCHHI. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
